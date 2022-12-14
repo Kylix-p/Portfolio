@@ -8,19 +8,39 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
+
+    <section class="menu">
+      <button id="close-menu">&times;</button>
       <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#qualification">Qualification</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <header>
+      <nav class="desktop-nav">
         <a href="#about-me">About Me</a>
         <a href="#qualification">Qualification</a>
         <a href="#hobbies">Hobbies</a>
-        <a href="#technology">Technology</a
-        ><a href="#contact-me">Contact Me</a>
+        <a href="#technology">Technology</a><a href="#contact-me">Contact Me</a>
+      </nav>
+
+
+      <nav class="mobile-nav">
+        <button id="menu-button">Menu</button>
       </nav>
     </header>
     <main class="container">
       <article class="intro">
         <img id="profile-image" src="image/images.jpg" alt="my-image" />
-        <p>Hello I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <p>
+          Hello I am <span id="dynamic-text" class="dynamic-text-color"></span>
+        </p>
         <h1>Hi i am Kishu</h1>
         <p class="social-links">
           <a href="######" target="_blank">
@@ -112,10 +132,9 @@
       </form>
     </section>
 
-    <footer>
-      Made with ❤ By Kylix ©2022
-    </footer>
+    <footer>Made with ❤ By Kylix ©2022</footer>
 
     <script src="main.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
