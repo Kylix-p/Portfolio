@@ -1,17 +1,53 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+
+header nav a {
+    margin-right: 16px;
+    padding: 8px;
+}
+.menu nav a {
+    padding: 8px;
+}
+nav a {
+    text-decoration: none;
+}
+header nav>a:last-child {
+    margin-right: revert;
+}
+
+nav a:hover {
+    background-color: #8080807a;
+    border-radius: 6px;
+}
+
+nav a:visited {
+    color: royalblue;
 }
 
 .container {
     padding: 16px;
 }
 
-.container>div>h2 {
+.container>section>h2 {
     text-align: center;
 }
 
@@ -85,4 +121,73 @@ p {
 #contact textarea,
 #contact button {
     width: 100%;
+    font-size: 1.2rem;
+    padding: 8px;
+}
+
+#contact-me {
+    margin-top: 16px;
+}
+
+footer {
+    margin-top: 13px;
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid;
+}
+
+
+
+/* Media Querry */
+
+.mobile-nav, section.menu{
+    display: none;
+}
+
+@media (width < 500px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: revert;
+    }
+    #menu-button {
+        display: block;
+        background-color: transparent;
+        border-radius: 8px;
+        margin-left: auto;
+    }
+    section.menu {
+        display: revert;
+        height: 0;
+        overflow: hidden;
+        position:fixed;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+    }
+    section.menu ul {
+        list-style: none;
+    }
+    section.menu ul>li {
+        margin-bottom: 16px;
+    }
+    section.menu nav {
+        margin-top: 48px;
+        font-size: 1.5rem;
+    }
+    #close-menu {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background-color: transparent;
+        font-size: x-large;
+        border: none;
+    }
+}
+@media (width <= 400px) {
+    #profile-image {
+        width: 100%;
+    }
 }

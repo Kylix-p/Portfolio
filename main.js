@@ -1,5 +1,7 @@
-const autoTyping = document.getElementById("dynamic-text");
+document.addEventListener("DOMContentLoaded", function() {
 
+    const autoTyping = document.getElementById("dynamic-text");
+    
 const arrayWord = ["Programmer...","Mentor...","Web developer..."];
 let letterIndex = 0;
 let arrayCounter = 0;
@@ -25,7 +27,6 @@ function removeElement () {
         printLetters(arrayWord[arrayCounter]);
     }
     else if (letterIndex > -1) {
-        console.log(letterIndex);
         let updateArray = "";
         for (let index = 0; index < letterIndex; index++) {
             updateArray += arrayWord[arrayCounter].charAt(index);
@@ -36,3 +37,5 @@ function removeElement () {
     }
 }
 printLetters(arrayWord[arrayCounter]);
+
+})
