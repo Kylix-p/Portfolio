@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <img id="profile-image" src="image/images.jpg" alt="my-image" />
+        <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <h1>Hi i am Kishu</h1>
+        <p class="social-links">
+          <a href="######" target="_blank">
+            <img src="icons/instagram.png" alt="instagram-img" />
+          </a>
+          <a href="#####" target="_blank">
+            <img src="icons/linkedin.png" alt="linkedin-img" />
+          </a>
+          <a href="###" target="_blank">
+            <img src="icons/twitter.png" alt="twitter-img" />
+          </a>
+        </p>
+      </div>
+      <div id="about-me">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+          architecto! Minima fugiat eligendi iusto enim molestiae maxime id quod
+          quam animi magni unde, expedita dolore qui quis nihil, ex ea amet
+          quisquam non quos.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+          similique.
+        </p>
+      </div>
+      <div id="qualification">
+        <h2>Qualification</h2>
+        <ol>
+          <li>Test 1</li>
+          <li>Test 2</li>
+        </ol>
+      </div>
+      <div id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Music</li>
+          <li>Coading</li>
+          <li>Learning</li>
+        </ul>
+      </div>
+      <div id="technology">
+        <h2>Technology</h2>
+        <table>
+          <tr>
+            <th>Frontend</th>
+            <th>Backend</th>
+            <th>Database</th>
+          </tr>
+          <tr>
+            <td>Html</td>
+            <td>Node js</td>
+            <td>MY Sql</td>
+          </tr>
+          <tr>
+            <td>Css</td>
+            <td>Rails</td>
+            <td>Mongo DB</td>
+          </tr>
+          <tr>
+            <td>JS</td>
+            <td>Asp.net</td>
+            <td>Postagres</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="contact-me">
+      <form name="contact" id="contact" method="POST" data-netlify="true">
+        <h1>Contact Me</h1>
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

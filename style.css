@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    padding: 16px;
+}
+
+.container>div>h2 {
+    text-align: center;
+}
+
+.intro {
+    margin: -16px;
+    padding: 16px;
+    background-color: #1a1918;
+    color: white;
+    text-align: center;
+}
+
+#profile-image {
+    border-radius: 18px;
+    height: 300px;
+    width: 300px;
+}
+
+.social-links img {
+    height: 50px;
+    width: 50px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: auto 16px;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 3px;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.dynamic-text-color {
+    color: royalblue;
+}
+
+#contact {
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+#contact label {
+    display: block;
+    font-weight: 500;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+}
