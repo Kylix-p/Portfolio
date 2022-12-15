@@ -166,6 +166,7 @@ footer {
         z-index: 1;
         background-color: white;
         width: 100%;
+        transition: height 0.8s ;
     }
     section.menu ul {
         list-style: none;
